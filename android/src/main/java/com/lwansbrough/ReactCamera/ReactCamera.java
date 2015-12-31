@@ -1,4 +1,4 @@
-package com.lwansbrough.RCTCamera;
+package com.lwansbrough.ReactCamera;
 
 import java.util.Arrays;
 import java.util.ArrayList;
@@ -20,4 +20,13 @@ public class ReactCamera implements ReactPackage {
     );
   }
 
+  @Override
+  public List<Class<? extends JavaScriptModule>> createJSModules() {
+    return Arrays.asList();
+  }
+
+  @Override
+  public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
+    return new ArrayList<NativeModule>();
+  }
 }
